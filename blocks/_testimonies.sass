@@ -1,0 +1,84 @@
+.testimony
+  margin-bottom: 120px
+
+.testimony__inner 
+  margin-top: 36px
+  display: flex
+  justify-content: space-between
+
+.testimony__pic
+  min-width: 240px
+  min-height: 320px
+  border-radius: 79px 0 83px 0
+  background-color: $color_pink
+
+.testimony__pic1
+  background: url("../img/testimony/1.jpg") no-repeat center
+  background-size: cover
+
+.testimony__pic2
+  background: url("../img/testimony/2.jpg") no-repeat center
+  background-size: cover
+
+.testimony__slider
+  max-width: 384px
+  min-height: 320px
+
+.testimony__item
+  width: 100%
+  height: 87.5%
+  padding: 54px 16px 58px 17px
+  border-radius: 0 79px 0 83px
+  background-color: #fff
+  border: 1px solid #A8DCEC
+
+.slider__arrows
+  width: 100%
+  height: 12.5%
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+  margin-top: 2px
+
+.testimony__review
+  +font(14,600,$color_prim)
+  line-height: 19px
+  margin-top: 12px
+  margin-bottom: 17px
+  margin-left: -2px
+
+.testimony__autor
+  display: flex
+  align-items: center
+  line-height: 17px
+  margin-left: -2px
+
+.author-avatar
+  width: 40px
+  height: 40px
+  border-radius: 50%
+  margin-right: 8px
+
+.author-name
+  +font(12, 600, #AFAFAF)
+
+.slider-dots-wrapper
+  margin-top: 23px
+  display: flex
+  justify-content: flex-end
+
+.slider-dots
+  max-width: 100%
+  display: flex
+
+.slider-dot
+  width: 40px
+  height: 8px
+  border-radius: 8px
+  background-color: #e5e5e5
+  margin-right: 8px
+  &:last-child
+    margin-right: 0
+
+.slider-dot--active
+  background-color: $color_yellow

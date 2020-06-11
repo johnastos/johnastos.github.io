@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="xzz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- SPRITES -->
+  <svg style="display: none;">
+    <!-- FULL-STAR -->
+    <symbol id="full-star" viewBox="0 -10 511 511">
+      <title>full-star</title>
+      <desc>full-star icon</desc>
+    <g>
+      <path d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0"/>  
+    </g>
+  </symbol>
+    <!-- HALF-STAR -->
+    <symbol id="half-star" enable-background="new 0 0 24 24" viewBox="0 0 24 24">
+      <title>half-star</title>
+      <desc>half-star icon</desc>
+      <g>
+        <path d="m23.79 9.87-5.36 5.49 1.26 7.77c.111.62-.562 1.074-1.1.78l-6.59-3.65v-20.23c.28 0 .56.13.68.4l3.31 7.05 7.37 1.12c.616.11.843.835.43 1.27z" fill="transparent"/><path d="m12 .03v20.23l-6.59 3.65c-.529.297-1.212-.153-1.1-.78l1.26-7.77-5.36-5.49c-.413-.435-.187-1.16.43-1.27l7.37-1.12 3.31-7.05c.12-.27.4-.4.68-.4z"/>
+      </g>
+    </symbol>
+    <!-- EMPTY-STAR -->
+    <symbol id="empty-star" viewBox="0 -10 511 511">
+      <title>empty-star</title>
+      <desc>empty-star icon</desc>
+      <g>
+        <path d="m114.59375 491.140625c-5.609375 0-11.179688-1.75-15.933594-5.1875-8.855468-6.417969-12.992187-17.449219-10.582031-28.09375l32.9375-145.089844-111.703125-97.960937c-8.210938-7.167969-11.347656-18.519532-7.976562-28.90625 3.371093-10.367188 12.542968-17.707032 23.402343-18.710938l147.796875-13.417968 58.433594-136.746094c4.308594-10.046875 14.121094-16.535156 25.023438-16.535156 10.902343 0 20.714843 6.488281 25.023437 16.511718l58.433594 136.769532 147.773437 13.417968c10.882813.980469 20.054688 8.34375 23.425782 18.710938 3.371093 10.367187.253906 21.738281-7.957032 28.90625l-111.703125 97.941406 32.9375 145.085938c2.414063 10.667968-1.726562 21.699218-10.578125 28.097656-8.832031 6.398437-20.609375 6.890625-29.910156 1.300781l-127.445312-76.160156-127.445313 76.203125c-4.308594 2.558594-9.109375 3.863281-13.953125 3.863281zm141.398438-112.875c4.84375 0 9.640624 1.300781 13.953124 3.859375l120.277344 71.9375-31.085937-136.941406c-2.21875-9.746094 1.089843-19.921875 8.621093-26.515625l105.472657-92.5-139.542969-12.671875c-10.046875-.917969-18.6875-7.234375-22.613281-16.492188l-55.082031-129.046875-55.148438 129.066407c-3.882812 9.195312-12.523438 15.511718-22.546875 16.429687l-139.5625 12.671875 105.46875 92.5c7.554687 6.613281 10.859375 16.769531 8.621094 26.539062l-31.0625 136.9375 120.277343-71.914062c4.308594-2.558594 9.109376-3.859375 13.953126-3.859375zm-84.585938-221.847656s0 .023437-.023438.042969zm169.128906-.0625.023438.042969c0-.023438 0-.023438-.023438-.042969zm0 0"/>
+      </g>
+    </symbol>
+  <!-- <svg class="star"><use xlink:href="#full-star"></use></svg> -->
+  <!-- <svg class="star"><use xlink:href="#half-star"></use></svg> -->
+  <!-- <svg class="star"><use xlink:href="#empty-star"></use></svg> -->
+  </svg>
+
+<!-- header -->
+<header class="header">
+  <div class="header__container">
+    <div class="header__inner">
+      <div class="logotype">
+        <img src="./img/logo.png" alt="logotype" class="logo__pic">
+        <p class="logo__text">woodies</p>
+      </div> <!-- /.logotype -->
+  
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#!" class="nav__link">Home</a></li>
+          <li><a href="#!" class="nav__link">About Us</a></li>
+          <li><a href="#!" class="nav__link">How it works</a></li>
+          <li><a href="#!" class="nav__link">Categories</a></li>
+          <li><a href="#!" class="nav__link">Testimony</a></li>
+          <li><a href="#!" class="log-shop__btn log__btn">Sign Up</a></li>
+          <!-- <li><a href="#!" class="nav__btn">Sign Up</a></li> -->
+        </ul> <!-- /.nav__list -->
+      </nav> <!-- /.nav -->
+  
+    </div> <!-- /.header__inner -->
+  </div> <!-- /.container -->
+
+  <div class="container rel">
+    <div class="bg_logo header__bg_logo">
+    </div><!-- /.header__bg_logo -->
+    <div class="header__border-round">
+    </div><!-- /.header__border-round -->
+  </div> <!-- /.container -->
+
+</header> <!-- /.header -->
+
+<!-- intro -->
+<section class="intro">
+  <div class="header__container">
+    <div class="intro__inner">
+      <div class="intro__content">
+        <p class="intro__suptitle">Are you looking for <b>woodden furniture</b> for your place?</p>
+        <h2 class="intro__title">This is the Right Place</h2>
+        <a href="#!" class="btn intro__btn">Explore Furniture</a>
+      </div> <!-- /.intro__content -->
+    
+      <div class="intro__picture">
+        <img src="./img/intro/table.png" alt="table" srcset="">
+      </div> <!-- /.intro__picture -->
+    </div> <!-- /.intro__inner -->
+  </div> <!-- /.container -->
+
+</section> <!-- /.intro -->
+
+<!-- about -->
+<section class="about">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__logo">
+        <img src="./img/section-logo.png" alt="" class="about__logo-img">
+        <h3 class="section__pretitle">Who we are</h3>
+      </div>
+      <div class="line"></div>
+      <h2 class="section__title">ABOUT US</h2>
+    </div> <!-- /.about__header -->
+
+
+    <article class="about__row row1">
+      <div class="about__border-round"></div>
+      <img src="./img/about/1.png" alt="">
+      <div class="bg_logo about__bg_logo"></div>
+      <div class="about__row1-content">
+        <p class="about__row1-title">WOODIES<b> is the </b>home of modern wooden furniture</p>
+        <p class="about__row-subtitle">the answer to your need for furniture with shapes, sizes and colors. </p>
+      </div>
+    </article> <!-- /.about__row -->
+    <article class="about__row row2">
+      <img src="./img/about/2.png" alt="">
+      <div class="about__row2-content">
+        <p class="about__row2-title">Customized furniture <b>made just for you</b></p>
+        <p class="about__row-subtitle">Get it easy to adjust furniture to the shape and size of your <br> dwelling or business.</p>
+      </div>
+    </article> <!-- /.about--row reverse -->
+  </div>  <!-- /.container -->
+</section>  <!-- /.about -->
+
+<!-- works -->
+<section class="works">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__logo">
+        <img src="./img/section-logo.png" alt="" class="about__logo-img">
+        <h3 class="section__pretitle">How to custom</h3>
+      </div>
+      <div class="line"></div>
+      <h2 class="section__title">HOW IT WORKS</h2>
+    </div> <!-- /.section__header -->
+
+    <div class="works__inner">
+      <div class="works__item">
+        <img src="./img/howitworks/1.png" alt="">
+        <p class="works__text">Choose Design</p>
+      </div> <!-- /.works__item -->
+
+      <div class="works__item">
+        <img src="./img/howitworks/2.png" alt="">
+        <p class="works__text">Area measuring</p>
+      </div> <!-- /.works__item -->
+
+      <div class="works__item">
+        <img src="./img/howitworks/3.png" alt="">
+        <p class="works__text">Budgeting</p>
+      </div> <!-- /.works__item -->
+
+      <div class="works__item">
+        <img src="./img/howitworks/4.png" alt="">
+        <p class="works__text">Production</p>
+      </div> <!-- /.works__item -->
+
+    </div> <!-- /.works__inner -->
+    <a href="#!" class="btn works__btn">Get Personalized Now</a>
+  </div> <!-- /.container -->
+</section> <!-- /.works -->
+
+<!-- categories -->
+<section class="categories">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__logo">
+        <img src="./img/section-logo.png" alt="" class="about__logo-img">
+        <h3 class="section__pretitle">What we have</h3>
+      </div>
+      <div class="line"></div>
+      <h2 class="section__title">CATEGORIES</h2>
+    </div> <!-- /.section__header -->
+
+    <div class="categories__inner">
+      <div class="categories__item bg-color-pink">
+        <h3 class="categories__item-name">Desk</h3>
+          <img class="category__item-img-first" src="./img/categories/1.png" alt="">
+        <a href="#!" class="log-shop__btn shop__btn">Shop Now</a>
+      </div> <!-- /.categories__item bg-color-pink -->
+
+      <div class="categories__item bg-color-yellow">
+        <h3 class="categories__item-name">Chair</h3>
+        <img class="category__item-img" src="./img/categories/2.png" alt="">
+        <a href="#!" class="log-shop__btn shop__btn">Shop Now</a>
+      </div> <!-- /.categories__item bg-color-yellow -->
+
+      <div class="categories__item bg-color-blue">
+        <h3 class="categories__item-name">Kitchenware</h3>
+        <img class="category__item-img" src="./img/categories/3.png" alt="">
+        <a href="#!" class="log-shop__btn shop__btn">Shop Now</a>
+      </div> <!-- /.categories__item bg-color-blue -->
+
+      <div class="categories__item bg-color-pink">
+        <h3 class="categories__item-name">Book Shelf</h3>
+        <img class="category__item-img" src="./img/categories/4.png" alt="">
+        <a href="#!" class="log-shop__btn shop__btn">Shop Now</a>
+      </div> <!-- /.categories__item bg-color-pink -->
+
+      <div class="categories__item bg-color-yellow">
+        <h3 class="categories__item-name item-name-electronics">Electronics</h3>
+        <img class="category__item-img" src="./img/categories/5.png" alt="">
+        <a href="#!" class="log-shop__btn shop__btn">Shop Now</a>
+      </div> <!-- /.categories__item bg-color-yellow -->
+
+    </div> <!-- /.categories__inner -->
+  </div> <!-- /.container -->
+</section> <!-- /.categories -->
+
+<!-- testimonies -->
+<section class="testimony">
+  <div class="container">
+    <div class="section__header">
+      <div class="section__logo">
+        <img src="./img/section-logo.png" alt="" class="about__logo-img">
+        <h3 class="section__pretitle">What they say</h3>
+      </div>
+      <div class="line"></div>
+      <h2 class="section__title">TESTIMONY</h2>
+    </div> <!-- /.section__header -->
+    
+    <div class="testimony__inner">
+      <div class="testimony__pic testimony__pic1"></div>
+      <div class="testimony__pic testimony__pic2"></div>
+      <div class="testimony__slider">
+
+        <div class="testimony__item">
+          <div class="stars">
+            <svg class="star"><use xlink:href="#full-star"></use></svg>
+            <svg class="star"><use xlink:href="#full-star"></use></svg>
+            <svg class="star"><use xlink:href="#full-star"></use></svg>
+            <svg class="star"><use xlink:href="#full-star"></use></svg>
+            <svg class="star"><use xlink:href="#full-star"></use></svg>
+          </div> <!-- /.stars -->
+          <p class="testimony__review">
+            My experience with WOODIES is a complete success, from customed furniture, range of product, modern design, purchasing experience, the delivery and newsletter. Litterally everything is great. Thank you!
+          </p> <!-- /.testimony__review -->
+          <div class="testimony__autor">
+            <img src="./img/testimony/avatar.jpg" alt="" class="author-avatar">
+            <p class="author-name">Sandra Dewi<br>Jakarta Selatan</p>
+          </div> <!-- /.testimony__autor -->
+        </div> <!-- /.testimony__item -->
+
+        <div class="slider__arrows">
+          <span>&larr; Previous</span>
+          <span>Next &rarr;</span>
+        </div> <!-- /.slider__arrows -->
+      </div> <!-- /.testimony__slider -->
+    </div> <!-- /.testimony__inner -->
+    <div class="slider-dots-wrapper">
+      <div class="slider-dots">
+        <div class="slider-dot slider-dot--active"></div>
+        <div class="slider-dot"></div>
+        <div class="slider-dot"></div>
+        <div class="slider-dot"></div>
+      </div>
+    </div> <!-- /.slider-dots-wrapper -->
+
+
+  </div> <!-- /.container -->
+</section> <!-- /.testimony -->
+
+<footer class="footer">
+  <div class="footer__bg">
+    <div class="container">
+      <div class="subscribe__inner">
+        <div class="subscribe__text">
+          <h3 class="subscribe__title">Subscribe to our newsletter</h3>
+          <p class="subscribe__text">A monthly digest of the new WOODIES products, hot offers, and resources.</p>
+        </div> <!-- /.subscribe__text -->
+        <form action="\" class="subscribe_form">
+          <input class="subscribe__email" type="email" name="" id="" placeholder="Your email address">
+          <button class="btn subscribe__btn">Subscribe</button>
+        </form> <!-- /.subscribe_form -->
+      </div> <!-- /.subscribe__inner -->
+
+      <div class="footer__inner">
+        <div class="footer__item">
+          <div class="logotype">
+            <img src="./img/logo.png" alt="logotype" class="logo__pic">
+            <p class="logo__text">woodies</p>
+          </div> <!-- /.logotype -->
+          <a href="tel: 0128967453" class="footer__link">(012) 8967453</a>
+          <a href="mailto: woodies@gmail.com" class="footer__link">woodies@gmail.com</a>
+          <p class="footer__link">Jakarta, Indonesia</p>
+        </div> <!-- /.footer__item -->
+
+        <div class="footer__item">
+          <h3 class="footer__nav-title">Product</h3>
+          <a href="#!" class="footer__link">Furnitures</a>
+          <a href="#!" class="footer__link">Packages</a>
+          <a href="#!" class="footer__link">Services</a>
+        </div> <!-- /.footer__item -->
+
+        <div class="footer__item">
+          <h3 class="footer__nav-title">Resources</h3>
+          <a href="#!" class="footer__link">Blog</a>
+          <a href="#!" class="footer__link">FAQs</a>
+          <a href="#!" class="footer__link">Contact Us</a>
+        </div> <!-- /.footer__item -->
+
+        <div class="footer__item">
+          <h3 class="footer__nav-title">Company</h3>
+          <a href="#!" class="footer__link">About Us</a>
+          <a href="#!" class="footer__link">Jobs</a>
+          <a href="#!" class="footer__link">Our Team</a>
+        </div> <!-- /.footer__item -->
+
+        <div class="footer__item">
+          <h3 class="footer__nav-title">Follow Us</h3>
+          <a href="#!" class="footer__link">Facebook</a>
+          <a href="#!" class="footer__link">Instagram</a>
+          <a href="#!" class="footer__link">Twitter</a>
+        </div> <!-- /.footer__item -->
+
+      </div> <!-- /.footer__inner -->
+      <p class="copyright">© 2020 WOODIES</p>
+    </div> <!-- /.container -->
+  </div> <!-- /.footer__bg -->
+</footer> <!-- /.footer -->
+
+</body>
+</html>

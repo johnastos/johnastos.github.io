@@ -1,0 +1,47 @@
+.footer
+
+
+.footer__bg
+  width: 1152px
+  margin: 0 auto
+  padding-top: 52px
+  background-color: #fff
+  background: url("../img/footer/footer.jpg") right bottom no-repeat, url("../img/footer/bg.png") center repeat
+
+.footer__inner
+  display: inline-flex
+  margin-top: 85px
+  margin-left: 7px
+  padding-top: 25px
+  align-items: flex-end
+  position: relative
+  &::before
+    content: ""
+    position: absolute
+    width: 100%
+    height: 1px
+    left: 0
+    top: 0
+    background-color: #C4C4C4
+
+.footer__item
+  margin-right: 53px
+  &:first-child
+    margin-right: 46px
+  &:last-child
+    margin-right: 0
+
+.footer__link
+  display: block
+  +font(14,400,#8D8D8D)
+  text-decoration: none
+  margin-top: 14px
+
+.footer__nav-title
+  +font(18,600,#333333)
+
+.copyright
+  margin-top: 42px
+  padding-bottom: 24px
+  text-align: center
+  +font(12,600,#8D8D8D)

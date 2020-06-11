@@ -1,0 +1,41 @@
+.subscribe__inner
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.subscribe__text
+  flex-basis: 50%
+  padding-left: 4px
+
+.subscribe__title
+  +font(18,600,#000)
+  line-height: 25px
+  letter-spacing: 0.2px
+  padding-left: 3px
+
+.subscribe__text
+  +font(16,400,#000)
+  line-height: 22px
+
+.subscribe_form
+  flex-basis: 50%
+  display: flex
+  justify-content: flex-end
+  padding-right: 4px
+
+.subscribe__email
+  height: 40px
+  padding: 0 16px
+  flex-basis: 328px
+  background: #FFFFFF
+  border: 1px solid #DAA520
+  border-radius: 4px 0 0 4px
+  +font(16,400,$color_prim)
+  &:placeholder
+    color: #afafaf
+  &:focus
+    outline: none    
+
+.subscribe__btn
+  height: 40px
+  flex-basis: 120px

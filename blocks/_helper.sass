@@ -1,0 +1,85 @@
+body
+  font-family: 'Nunito', sans-serif
+  color: $color_prim
+  background-color: #e5e5e5
+
+.header__container
+  width: 1152px
+  margin: 0 auto
+  position: relative
+
+.container
+  width: 1152px
+  padding: 0 100px 0 100px
+  margin: 0 auto
+
+.rel 
+  position: relative
+
+.btn
+  +font(16,700,#ffffff)
+
+  background-color: $color_btn_yellow
+  text-decoration: none
+  border: none
+  &:focus
+    outline: none
+
+.log-shop__btn
+  display: inline-block
+  background-color: transparent
+  border: 1px solid $color_prim
+  text-decoration: none
+
+.section__header
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.section__logo
+  display: flex
+  align-items: center
+
+.section__title
+  +font(72, 800, rgba(34, 34, 34, 0.1))
+  text-transform: uppercase
+
+.section__pretitle
+  +font(36, 700, $color_prim)
+  margin-left: 8px
+  margin-right: 16px
+
+.line
+  width: 1px
+  height: 1px
+  background-color: #000000
+  flex-grow: 1
+
+.bg_logo
+  display: block
+  position: absolute
+  z-index: -1
+  width: 391px
+  height: 390px
+  background: transparent url("../img/logobig.svg") no-repeat
+  
+.bg-color-pink
+  background-color: $color_pink
+
+.bg-color-yellow
+  background-color: $color_yellow
+
+.bg-color-blue
+  background-color: $color_blue
+
+.testimonials-slider__border-round
+  width: 384px
+  height: 280px
+  border-radius: 0 79px 0 83px
+  background-color: $color_pink
+
+.star
+  width: 20px
+  height: 20px
+  fill: #FFC107
+  margin-right: 4px
